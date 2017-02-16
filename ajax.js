@@ -46,4 +46,14 @@ $(document).ready(function() {
       $('#step8').append(responseData);
     });
   });
+  $('#request-car').on('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/a_car',
+      method: 'GET',
+      // data: ,
+      dataType: 'HTML'
+    }).done(function(responseData){
+      $('#step9').append(responseData);
+    });
+  });
 });
