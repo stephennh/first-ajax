@@ -40,10 +40,10 @@ $(document).ready(function() {
     $.ajax({
       url: 'http://first-ajax-api.herokuapp.com/time',
       method: 'GET',
-      // data: ,
+      // data: {timezone: 'America/Mexico_City'},
       dataType: 'text'
     }).done(function(responseData) {
-      $('#step8').append(responseData)
+      $('#step8').append(responseData);
     });
   });
 });
